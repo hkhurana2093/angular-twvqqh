@@ -10,3 +10,16 @@ element.style {
     border-color: #814fed
 
 }
+
+.col-lg-6 {
+    flex: 0 -12 67%;
+    max-width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}

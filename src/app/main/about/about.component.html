@@ -39,23 +39,14 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-6">
+                    <ul class="nav nav-pills">
+                      <li ><button type="button" class="btn btn-primary" (click)="openModal(Education)">EDUCATION</button></li>
+                      <li ><button type="button" class="btn btn-primary" (click)="openModal(Project)">PROJECT</button></li>
+                      <li ><button type="button" class="btn btn-primary" (click)="openModal(Responsibilities)">RESPONSIBILITIES</button></li>
+                      <li ><button type="button" class="btn btn-primary" (click)="openModal(Training)">CERTIFICATION</button></li>
+                      <li ><button type="button" class="btn btn-primary" (click)="openModal(Extra)">EXTRA</button></li>
+                    </ul> 
 
-                  <table style="width:100%">
-                      <tr>
-                        <th> <button type="button" class="btn btn-primary" (click)="openModal(Education)">EDUCATION</button>
-                        </th>
-                        <th> <button type="button" class="btn btn-primary" (click)="openModal(Project)">PROJECT</button>
-                        </th> 
-                        <th><button type="button" class="btn btn-primary" (click)="openModal(Responsibilities)">RESPONSIBILITIES</button>
-                        </th>
-                        <th> <button type="button" class="btn btn-primary" (click)="openModal(Training)">CERTIFICATION </button>
-                        </th>
-                        <th><button type="button" class="btn btn-primary" (click)="openModal(Extra)">EXTRA</button>
-                        </th>
-                      </tr>
-                      
-                    </table>
-                  
                   <ng-template #Education>
                     <div class="modal-header">
                       <h4 class="modal-title pull-left">Education</h4>
