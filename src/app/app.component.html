@@ -13,11 +13,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse show" [ngClass]="{ 'show': navbarOpen }">
           <ul class="nav navbar-nav menu_nav offset">  
-          <li class="nav-item active"><a class="nav-link" routerLink="/home" >Home</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/about"   >About</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/skill"  >Skill</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/contact"  >Contact</a></li>
+          <li class="nav-item active"><a class="nav-link" routerLink="/home" (click)="toggleNavbar()" >Home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/about" (click)="toggleNavbar()"  >About</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/skill" (click)="toggleNavbar()"  >Skill</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/portfolio" (click)="toggleNavbar()" >Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/contact" (click)="toggleNavbar()"  >Contact</a></li>
           </ul>
         </div>
       </div>
